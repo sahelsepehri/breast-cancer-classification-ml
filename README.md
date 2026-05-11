@@ -23,5 +23,11 @@ While effective on this dataset, the models are based on pre-engineered features
 ## Technologies
 Python | Pandas | Scikit-learn | SHAP | Matplotlib/Seaborn | Jupyter
 
+## References
+- UCI Machine Learning Repository  
+- Scikit-learn Documentation  
+- Pandas Documentation  
+- Matplotlib Documentation  
+- Seaborn Documentation
 ---
 *Developed for educational purposes in computational biology.*
