@@ -1,72 +1,27 @@
-# Breast Cancer Classification using Machine Learning
+# Breast Cancer Tumor Classification
 
-## Project Overview
+An end-to-end machine learning project to classify breast tumors as malignant or benign using the Wisconsin dataset. This project focuses on model comparison, performance evaluation, and interpretability using SHAP.
 
-- This project applies machine learning techniques to classify breast tumors as benign or malignant using the Breast Cancer Wisconsin dataset. 
-- The goal is to build predictive models and identify the most important cellular features contributing to the classification.
-- Several machine learning models were trained and compared to evaluate their performance. 
-- Model interpretation techniques were also used to understand how different features influence predictions.
+## Highlights
+- **Models:** Logistic Regression, SVM, KNN, Random Forest.
+- **Evaluation:** Precision, Recall, F1-Score, ROC-AUC, Confusion Matrices.
+- **Interpretability:** SHAP analysis & Random Forest feature importance.
+- **Insights:** Identified key geometric features (size, perimeter) influencing tumor malignancy.
 
-## Dataset
+## Workflow
+1. **EDA & Preprocessing:** Data cleaning, class balance inspection, and feature scaling.
+2. **Dimensionality Reduction:** PCA to visualize class separability in lower dimensions.
+3. **Modeling:** Training and comparing four classification models.
+4. **Interpretation:** Analyzing model decisions with SHAP to ensure medical relevance.
 
-The dataset used in this project is the Breast Cancer Wisconsin Diagnostic dataset available in Scikit-learn.
+## Key Results
+Logistic Regression and SVM emerged as the top-performing models, effectively distinguishing between malignant and benign cases with high reliability. Analysis confirms that tumor morphology features (size, texture, concavity) are the primary predictors, aligning with clinical findings.
 
-It contains 569 samples and 30 numerical features extracted from digitized images of breast cell nuclei.
+## Limitations & Future Work
+While effective on this dataset, the models are based on pre-engineered features. Future work will focus on testing on more diverse, larger datasets and exploring deep learning on raw imaging data.
 
-Target classes:
+## Technologies
+Python | Pandas | Scikit-learn | SHAP | Matplotlib/Seaborn | Jupyter
 
-- Malignant (cancerous tumors)
-- Benign (non‑cancerous tumors)
-
-## Methods
-
-The following models were implemented:
-
-- Logistic Regression
-- Support Vector Machine (SVM)
-- Random Forest
-- K-Nearest Neighbors (KNN)
-
-The workflow includes:
-
-- Data exploration
-- Data preprocessing
-- Feature scaling
-- Model training and evaluation
-- Model comparison
-- Feature importance analysis
-- SHAP model interpretation
-
-## Results
-
-All models achieved high classification performance. Logistic Regression and SVM produced the highest accuracy among the tested models.
-
-Feature importance analysis indicates that characteristics related to cell size, perimeter, and concavity play a significant role in identifying malignant tumors.
-
-## Technologies Used
-
-- Python
-- Scikit-learn
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- SHAP
-
-## Project Structure
-
-breast-cancer-classification-ml
-breast_cancer_classification.ipynb  
-README.md  
-requirements.txt
-
-## References
-
-Scikit-learn Breast Cancer Dataset  
-https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_breast_cancer.html
-
-Scikit-learn Documentation  
-https://scikit-learn.org
-
-SHAP Documentation  
-https://shap.readthedocs.io
+---
+*Developed for educational purposes in computational biology.*
